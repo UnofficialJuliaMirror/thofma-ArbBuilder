@@ -25,10 +25,14 @@ else
 cd $WORKSPACE/srcdir
 cd arb/
 ./configure --prefix=$prefix --disable-static --enable-shared --with-gmp=$prefix --with-mpfr=$prefix --with-flint=$prefix
+if [ ! -f $prefx/lib/libflint-13.dll ]; then cp $prefix/bin/libflint-13.dll $prefix/lib/; fi
+if [ ! -f $prefx/lib/libflint.dll ]; then cp $prefix/bin/libflint.dll $prefix/lib/; fi
+#cp -n $prefix/bin/libflint-13.dll $prefix/bin/libflint.dll $prefix/lib/;
 cp $prefix/bin/libflint-13.dll $prefix/bin/libflint.dll $prefix/lib/
 make -j${nproc}
 make install
-
+rm $WORKSPACE/destdir/bin/libflint-13.dll
+rm $WORKSPACE/destdir/bin/libflint.dll
 fi
 
 """
