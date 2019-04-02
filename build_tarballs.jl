@@ -3,12 +3,12 @@
 using BinaryBuilder
 
 name = "libarb"
-version = v"2.16.0"
+version = v"0.0.0-56ce687ea1ff9a279dc3c8d20f31a4dd09bae6d1"
 
 # Collection of sources required to build libarb
 sources = [
     "https://github.com/fredrik-johansson/arb.git" =>
-    "fbc1c1a1630363b2905721fdc3598b5ed3b29b99",
+    "56ce687ea1ff9a279dc3c8d20f31a4dd09bae6d1",
 
 ]
 
@@ -56,7 +56,7 @@ products(prefix) = [
 dependencies = [
     "https://github.com/JuliaMath/GMPBuilder/releases/download/v6.1.2-2/build_GMP.v6.1.2.jl",
     "https://github.com/JuliaMath/MPFRBuilder/releases/download/v4.0.1-3/build_MPFR.v4.0.1.jl",
-    "https://github.com/thofma/Flint2Builder/releases/download/2b8f8acb/build_libflint.v2.0.0-b8f8acb317c265db99f828e7baf3266f07f92a7.jl"
+    "https://github.com/thofma/Flint2Builder/releases/download/ecbcda/build_libflint.v0.0.0-ecbcda9cdb871efa3833232e4b274e30fda372d8.jl"
 ]
 
 # Build the tarballs, and possibly a `build.jl` as well.
