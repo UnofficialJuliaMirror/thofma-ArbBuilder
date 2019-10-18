@@ -56,7 +56,7 @@ products(prefix) = [
 dependencies = [
     "https://github.com/JuliaPackaging/Yggdrasil/releases/download/GMP-v6.1.2-1/build_GMP.v6.1.2.jl",
     "https://github.com/JuliaPackaging/Yggdrasil/releases/download/MPFR-v4.0.2-1/build_MPFR.v4.0.2.jl",
-    "https://github.com/thofma/Flint2Builder/releases/download/c7d0dd/build_libflint.v0.0.0-c7d0dd9c7261e06785acb9420f6c9c43cccdfe9a.jl"
+    "https://github.com/thofma/Flint2Builder/releases/download/c58523/build_libflint.v0.0.0-c5852387025bf144f32c0593f0ecc906c81266f1.jl"
 ]
 
 # Build the tarballs, and possibly a `build.jl` as well.
